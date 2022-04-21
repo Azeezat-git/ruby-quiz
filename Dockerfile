@@ -1,5 +1,7 @@
-FROM ruby:2.6.6
+FROM engineyard/kontainers:ruby-3.0.4-v1.0.0
+
 RUN apt-get update -qq && apt-get install -y nodejs
+RUN apt-get install -y sqlite3 libsqlite3-dev
 
 RUN mkdir -p /app
 WORKDIR /app
