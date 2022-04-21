@@ -1,4 +1,4 @@
-FROM ruby:2.6.6
+FROM engineyard/kontainers:ruby-2.6.10-v1.0.0
 RUN apt-get update -qq && apt-get install -y nodejs
 
 RUN mkdir -p /app
