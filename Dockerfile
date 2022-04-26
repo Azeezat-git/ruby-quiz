@@ -2,7 +2,7 @@ FROM engineyard/kontainers:ruby-3.0.4-v1.0.0
 
 RUN apt-get update -qq && apt-get install -y nodejs
 RUN apt-get install -y sqlite3 libsqlite3-dev
-
+RUN gem install rails -v '5.2.7'
 RUN mkdir -p /app
 WORKDIR /app
 
