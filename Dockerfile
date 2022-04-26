@@ -11,7 +11,7 @@ COPY Gemfile.lock /app/Gemfile.lock
 
 RUN gem install bundler && bundle install --jobs 20 --retry 5
 
-COPY run.sh /app/run.sh
+COPY ..
 
 #RUN bundle exec rake db:migrate RAILS_ENV=development
 #RUN bundle exec rake db:seed
